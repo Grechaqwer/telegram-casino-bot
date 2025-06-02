@@ -3,9 +3,8 @@ import telebot
 from telebot import types
 
 BOT_TOKEN = '7766769017:AAG2ZwvXIwH2RjYdslQQZEsDjqQb1g5l3IQ'
-BOT_USERNAME = 'your_bot_username'
 
-bot = telebot.TeleBot("7766769017:AAG2ZwvXIwH2RjYdslQQZEsDjqQb1g5l3IQ")
+bot = telebot.TeleBot(BOT_TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start(message):
