@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-BOT_TOKEN = '7766769017:AAG2ZwvXIwH2RjYdslQQZEsDjqQb1g5l3IQ'
+BOT_TOKEN = '7457631853:AAH8gFID4T_rH4TMUeWHaCuwXMkuEsSErzU'
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # Удаляем Webhook, если он активен
