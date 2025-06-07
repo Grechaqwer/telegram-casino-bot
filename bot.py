@@ -49,7 +49,7 @@ def handle_guess(call):
             balances[ref_id] += 0.25  # 25% с проигрыша
     history[user_id].append((call.data, dice, win))
     bot.send_message(call.message.chat.id, f"🎲 Выпало: {игральные кости}")
-💵 Баланс: {balances[user_id]:.2f}$")
+"💵" Баланс: {balances[user_id]:.2f}$")
 
 @bot.message_handler(func=lambda m: m.text == "👥 Мои рефералы")
 def referrals_handler(message):
@@ -64,11 +64,11 @@ def referrals_handler(message):
         msg += f"{i}. ID {rid}, игр: {total_games}
 "
     msg += "
-🎁 За 25/50/100 рефералов вручную выдается: 2$/4.5$/10$.
+"🎁" За 25/50/100 рефералов вручную выдается: 2$/4.5$/10$.
 Попросите выплату у администрации."
     msg += f"
 
-🔗 Ваша ссылка: https://t.me/assassincasino_bot?start={user_id}"
+"🔗" Ваша ссылка: https://t.me/assassincasino_bot?start={user_id}"
     bot.send_message(message.chat.id, msg)
 
 @bot.message_handler(func=lambda m: m.text == "💰 Баланс")
