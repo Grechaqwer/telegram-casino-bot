@@ -1,1 +1,0 @@
-Assassin Casino Telegram Bot Project - временный placeholder
