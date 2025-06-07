@@ -48,8 +48,7 @@ def handle_guess(call):
         if ref_id:
             balances[ref_id] += 0.25  # 25% с проигрыша
     history[user_id].append((call.data, dice, win))
-    bot.send_message(call.message.chat.id, f"🎲 Выпало: {dice}
-{result}
+    bot.send_message(call.message.chat.id, f"🎲 Выпало: {игральные кости}")
 💵 Баланс: {balances[user_id]:.2f}$")
 
 @bot.message_handler(func=lambda m: m.text == "👥 Мои рефералы")
